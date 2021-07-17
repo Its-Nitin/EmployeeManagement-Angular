@@ -1,0 +1,25 @@
+<div class="container">
+    <br>
+
+    <h2>Fill Your Details</h2>
+    <br>
+
+    
+        <div class="form-group col-sm-6">
+          <label for="EmployeeName">Name</label>
+          <input type="text" [(ngModel)]="employee.employeeName" [ngModelOptions]="{standalone:true}" class="form-control" id="EmployeeName" name="empName" placeholder="Enter Name">
+        </div>
+        
+        <div class="form-group col-sm-6">
+          <label for="EmployeeEmail">Email</label>
+          <input type="text" [(ngModel)]="employee.employeeEmailId" [ngModelOptions]="{standalone:true}" class="form-control" id="EmployeeEmail" name="empEmail" placeholder="Enter Email">
+        </div>
+        
+        <div class="form-group col-sm-6">
+          <label for="EmployeePhone">Phone No</label>
+          <input type="text" [(ngModel)]="employee.employeePhoneNumber" [ngModelOptions]="{standalone:true}" class="form-control" id="EmployeePhone" name="empPhone" placeholder="Enter Contact No">
+        </div>
+
+        <button type="submit" (click) = updateEmployee() id="a1" class=" btn btn-success  mr-2">Edit</button>
+    
+</div>
